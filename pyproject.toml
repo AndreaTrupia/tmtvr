@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=40.8.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "tmtvr"
+version = "0.0.1"
+authors = [
+    { name="Andrea Trupia", email="andrea.trupia.96@gmail.com"}
+]
+description = "TMTVR is a lightweight, intuitive Object-Document Mapper (ODM) for CouchDB written in Python. It’s designed to make interacting with your database as easy as changing channels—if you can find the remote, that is."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GPL License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "CouchDB>=1.2"
+]
+[project.urls]
+"Homepage" = "https://github.com/AndreaTrupia/tmtvr"
+
+[project.scripts]
+tmtvr = "tmtvr.cli:main"
